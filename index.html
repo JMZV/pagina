@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Currículum Vitae</title>
+  <meta name="description" content="CV de [Nombre] [Apellido] — Ingeniero en Sistemas.">
+  <style>
+    :root{
+      --bg:#0f172a;
+      --fg:#e2e8f0;
+      --muted:#94a3b8;
+      --card:#111827;
+      --accent:#38bdf8;
+      --border:#1f2937;
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f8fafc; --fg:#0f172a; --muted:#475569; --card:#ffffff; --accent:#0ea5e9; --border:#e2e8f0;
+      }
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; background:var(--bg); color:var(--fg);
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    .container{
+      max-width: 920px; margin: 48px auto; padding: 0 20px;
+    }
+    header{
+      background: linear-gradient(120deg, rgba(56,189,248,.15), rgba(14,165,233,.05));
+      border:1px solid var(--border);
+      border-radius: 18px; padding: 28px;
+      box-shadow: 0 8px 24px rgba(0,0,0,.15);
+    }
+    h1{font-size: 2rem; margin: 0 0 4px 0; letter-spacing:.3px}
+    .subtitle{color:var(--muted); margin:0 0 12px 0}
+    .meta{display:flex; flex-wrap:wrap; gap:10px; margin-top:8px}
+    .meta a, .meta span{
+      padding:6px 10px; border:1px solid var(--border); border-radius: 999px; text-decoration:none; color:var(--fg);
+      display:inline-flex; align-items:center; gap:8px; font-size:.92rem; background:var(--card);
+    }
+    .badge-row{display:flex; flex-wrap:wrap; gap:8px; margin-top:14px}
+    .badge-row img{height:22px}
+    section{
+      background:var(--card); border:1px solid var(--border); border-radius:16px; padding:22px;
+      margin-top:20px;
+    }
+    h2{font-size:1.25rem; margin:0 0 14px 0; letter-spacing:.2px}
+    h3{margin:.5rem 0 .25rem; font-size:1.05rem}
+    .item-meta{color:var(--muted); font-size:.95rem; margin-bottom:.4rem}
+    ul{padding-left:18px; margin:.5rem 0}
+    li{margin: .25rem 0}
+    .grid{display:grid; gap:14px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));}
+    .chips{display:flex; flex-wrap:wrap; gap:8px}
+    .chip{border:1px solid var(--border); padding:4px 10px; border-radius:999px; font-size:.9rem; background:transparent}
+    footer{color:var(--muted); text-align:center; margin: 24px 0 8px}
+    a{color:var(--accent)}
+    @media print{
+      body{background:white; color:black}
+      header, section{box-shadow:none; border-color:#ddd}
+      .badge-row img{filter:grayscale(100%)}
+      a{color:black; text-decoration:underline}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>[Nombre] [Apellido]</h1>
+      <p class="subtitle">Ingeniero en Sistemas · Soluciones robustas con enfoque clásico y ordenado.</p>
+      <div class="meta">
+        <span>📍 Venezuela</span>
+        <a href="mailto:tuemail@example.com" rel="noopener">✉️ tuemail@example.com</a>
+        <a href="https://github.com/tuusuario" target="_blank" rel="noopener">🐙 GitHub</a>
+        <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener">🔗 LinkedIn</a>
+      </div>
+      <div class="badge-row">
+        <img alt="PHP" src="https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white">
+        <img alt="Node.js" src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white">
+        <img alt="Java" src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white">
+        <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black">
+        <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white">
+        <img alt="Laravel" src="https://img.shields.io/badge/Laravel-FF2D20?style=flat&logo=laravel&logoColor=white">
+        <img alt="Symfony" src="https://img.shields.io/badge/Symfony-000000?style=flat&logo=symfony&logoColor=white">
+        <img alt="Spring Boot" src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat&logo=spring-boot&logoColor=white">
+        <img alt="Vue.js" src="https://img.shields.io/badge/Vue.js-35495E?style=flat&logo=vue.js&logoColor=4FC08D">
+        <img alt="Quasar" src="https://img.shields.io/badge/Quasar-1976D2?style=flat&logo=quasar&logoColor=white">
+        <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white">
+        <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white">
+        <img alt="GCP" src="https://img.shields.io/badge/Google_Cloud-4285F4?style=flat&logo=google-cloud&logoColor=white">
+      </div>
+    </header>
+
+    <section>
+      <h2>💼 Experiencia Profesional</h2>
+      <article>
+        <h3>Ingeniero en Sistemas — Proyecto Biddeo</h3>
+        <div class="item-meta">2022 – Actualidad</div>
+        <ul>
+          <li>Desarrollo de módulos en <strong>Laravel 12</strong> y <strong>Symfony 7</strong>.</li>
+          <li>Integración de <strong>APIs de YouTube</strong> y optimización de campañas publicitarias.</li>
+          <li>Arquitectura distribuida con <strong>PostgreSQL 15</strong>, <strong>Redis</strong> y <strong>Docker</strong>.</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Desarrollador Full‑Stack — Freelance</h3>
+        <div class="item-meta">2016 – 2022</div>
+        <ul>
+          <li>Aplicaciones web a medida para medios y marketing.</li>
+          <li>Interfaces modernas con <strong>Vue.js</strong> y <strong>Quasar</strong>.</li>
+          <li>Migraciones de datos y despliegues en <strong>GCP</strong> y servidores privados.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>🛠️ Habilidades Técnicas</h2>
+      <div class="grid">
+        <div>
+          <h3>Lenguajes</h3>
+          <div class="chips">
+            <span class="chip">PHP</span><span class="chip">NodeJS</span><span class="chip">Java</span><span class="chip">JavaScript</span><span class="chip">Python</span>
+          </div>
+        </div>
+        <div>
+          <h3>Frameworks</h3>
+          <div class="chips">
+            <span class="chip">Laravel</span><span class="chip">Symfony</span><span class="chip">Spring Boot</span><span class="chip">Vue.js</span><span class="chip">Quasar</span>
+          </div>
+        </div>
+        <div>
+          <h3>Datos & Cloud</h3>
+          <div class="chips">
+            <span class="chip">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">Redis</span><span class="chip">Docker</span><span class="chip">GCP</span>
+          </div>
+        </div>
+        <div>
+          <h3>Prácticas</h3>
+          <div class="chips">
+            <span class="chip">Arquitectura Limpia</span><span class="chip">Patrones de Diseño</span><span class="chip">APIs REST</span><span class="chip">Integración LLMs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>🚀 Proyectos Destacados</h2>
+      <ul>
+        <li><strong>NotasPrensa</strong> — Plataforma Laravel para gestionar notas de prensa.</li>
+        <li><strong>LAIA Dashboard</strong> — Panel de clasificación con IA y Quasar.</li>
+        <li><strong>Alfresco SDK Extensions</strong> — Validaciones personalizadas y Web Scripts.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🎓 Educación</h2>
+      <p><strong>Ingeniería en Sistemas</strong> — IUTOMS (2006 – 2012)</p>
+    </section>
+
+    <section>
+      <h2>🗣️ Idiomas</h2>
+      <p>Español (Nativo) · Inglés (Profesional)</p>
+    </section>
+
+    <footer>
+      <p>“Orden, claridad y constancia: el camino sereno de la excelencia.”</p>
+    </footer>
+  </div>
+
+  <!-- Marcado estructurado para SEO básico (opcional) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "[Nombre] [Apellido]",
+    "jobTitle": "Ingeniero en Sistemas",
+    "address": { "@type": "PostalAddress", "addressCountry": "VE" },
+    "email": "mailto:tuemail@example.com",
+    "url": "https://github.com/tuusuario",
+    "sameAs": ["https://linkedin.com/in/tuusuario"]
+  }
+  </script>
+</body>
+</html>
